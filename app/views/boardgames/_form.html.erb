@@ -21,6 +21,21 @@
     <%= form.text_area :description %>
   </div>
 
+<div class="field">
+    <%= form.label :gamebox %>
+    <%= form.file_field :gamebox %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rulebook %>
+    <%= form.file_field :rulebook %>
+  </div>
+
+  <div class="field">
+    <%= form.label :components %>
+    <%= form.file_field :components , multiple: true %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
